@@ -13,7 +13,6 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8D7D3FAC3EE31198A6DD4E14 /* libPods-faceDetection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07948801FC394696CB44A151 /* libPods-faceDetection.a */; };
-		9F5FF6D0670219B9E497DD30 /* libPods-faceDetection-faceDetectionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1CDEBDDEBD1E22533CCBB3 /* libPods-faceDetection-faceDetectionTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +36,9 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = faceDetection/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = faceDetection/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = faceDetection/main.m; sourceTree = "<group>"; };
-		24C659FF65ECAB7CB0B3A326 /* Pods-faceDetection-faceDetectionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faceDetection-faceDetectionTests.debug.xcconfig"; path = "Target Support Files/Pods-faceDetection-faceDetectionTests/Pods-faceDetection-faceDetectionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3CCBBBCE1E9932D321A76185 /* Pods-faceDetection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faceDetection.debug.xcconfig"; path = "Target Support Files/Pods-faceDetection/Pods-faceDetection.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = faceDetection/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8A1CDEBDDEBD1E22533CCBB3 /* libPods-faceDetection-faceDetectionTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-faceDetection-faceDetectionTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FF9BD32C6DDE474B8DB03B /* Pods-faceDetection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faceDetection.release.xcconfig"; path = "Target Support Files/Pods-faceDetection/Pods-faceDetection.release.xcconfig"; sourceTree = "<group>"; };
-		C3E9011850E8193A8F45B81B /* Pods-faceDetection-faceDetectionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faceDetection-faceDetectionTests.release.xcconfig"; path = "Target Support Files/Pods-faceDetection-faceDetectionTests/Pods-faceDetection-faceDetectionTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +47,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F5FF6D0670219B9E497DD30 /* libPods-faceDetection-faceDetectionTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +96,6 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				07948801FC394696CB44A151 /* libPods-faceDetection.a */,
-				8A1CDEBDDEBD1E22533CCBB3 /* libPods-faceDetection-faceDetectionTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -142,8 +136,6 @@
 			children = (
 				3CCBBBCE1E9932D321A76185 /* Pods-faceDetection.debug.xcconfig */,
 				A6FF9BD32C6DDE474B8DB03B /* Pods-faceDetection.release.xcconfig */,
-				24C659FF65ECAB7CB0B3A326 /* Pods-faceDetection-faceDetectionTests.debug.xcconfig */,
-				C3E9011850E8193A8F45B81B /* Pods-faceDetection-faceDetectionTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -156,12 +148,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "faceDetectionTests" */;
 			buildPhases = (
-				9D3FA2B4BEE2F0720B0D65D9 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				62E8B64F0CB1F8B3C19B2131 /* [CP] Embed Pods Frameworks */,
-				09D29FD7DDAB3E2040AA5A9E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,23 +271,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-faceDetection/Pods-faceDetection-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		09D29FD7DDAB3E2040AA5A9E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-faceDetection-faceDetectionTests/Pods-faceDetection-faceDetectionTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-faceDetection-faceDetectionTests/Pods-faceDetection-faceDetectionTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-faceDetection-faceDetectionTests/Pods-faceDetection-faceDetectionTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		1ECFD83E8AE345ADB548EB68 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -314,23 +286,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-faceDetection/Pods-faceDetection-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		62E8B64F0CB1F8B3C19B2131 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-faceDetection-faceDetectionTests/Pods-faceDetection-faceDetectionTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-faceDetection-faceDetectionTests/Pods-faceDetection-faceDetectionTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-faceDetection-faceDetectionTests/Pods-faceDetection-faceDetectionTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		731AD2C4FA42BC6E1BC7FE86 /* [CP] Check Pods Manifest.lock */ = {
@@ -349,28 +304,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-faceDetection-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9D3FA2B4BEE2F0720B0D65D9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-faceDetection-faceDetectionTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -429,7 +362,6 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24C659FF65ECAB7CB0B3A326 /* Pods-faceDetection-faceDetectionTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -456,7 +388,6 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3E9011850E8193A8F45B81B /* Pods-faceDetection-faceDetectionTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;

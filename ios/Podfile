@@ -12,10 +12,11 @@ target 'faceDetection' do
     :hermes_enabled => false
   )
 
-  target 'faceDetectionTests' do
-    inherit! :complete
-    # Pods for testing
-  end
+  pod 'react-native-camera', path: '../node_modules/react-native-camera', subspecs: [
+    'TextDetector',
+    'FaceDetectorMLKit',
+    'BarcodeDetectorMLKit'
+  ]
 
   # Enables Flipper.
   #
@@ -27,4 +28,5 @@ target 'faceDetection' do
     react_native_post_install(installer)
     __apply_Xcode_12_5_M1_post_install_workaround(installer)
   end
+
 end
